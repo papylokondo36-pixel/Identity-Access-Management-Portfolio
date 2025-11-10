@@ -1,0 +1,4 @@
+username,email,department,job_role,created_date,status
+jsmith,jsmith@newco.com,Finance,Accountant,2025-11-10,Active
+mjones,mjones@newco.com,HR,Recruiter,2025-11-10,Active
+rdavis,rdavis@newco.com,IT,Support,2025-11-10,Active
