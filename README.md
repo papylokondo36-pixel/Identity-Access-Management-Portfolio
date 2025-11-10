@@ -1,3 +1,5 @@
+![IAM Portfolio](https://img.shields.io/badge/Identity-Access%20Management-blue)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen)
 # Identity-Access-Management-Portfolio
 Hands-on IAM projects demonstrating identity separation strategies, RBAC implementation, and access governance for divestiture scenarios
 
