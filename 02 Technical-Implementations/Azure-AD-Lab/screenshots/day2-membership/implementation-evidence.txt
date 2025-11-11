@@ -1,0 +1,6 @@
+﻿Azure AD Group Memberships Completed 11/11/2025 19:59:58
+- IT-Admins: Alex Johnson, Sarah Chen
+- Finance-Users: Michael Rodriguez
+- HR-Partners: Emily Watson
+- All-Employees: All 5 users
+- RBAC assignments verified in Azure Portal
