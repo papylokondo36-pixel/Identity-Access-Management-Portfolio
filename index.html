@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IAM Portfolio | Identity & Access Management Expert</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Your existing successful CSS styles go here */
+        :root { --primary: #2563eb; --secondary: #7c3aed; --success: #10b981; --dark: #1e293b; --light: #f8fafc; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%); min-height: 100vh; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; }
+        .header { background: white; padding: 2.5rem; border-radius: 15px; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; border-left: 5px solid var(--primary); }
+        h1 { font-size: 2.8rem; margin-bottom: 1rem; background: linear-gradient(to right, var(--primary), var(--secondary)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .stat-item { background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 5px 15px rgba(0,0,0,0.05); border: 2px solid #e2e8f0; }
+        .stat-number { font-size: 2.5rem; font-weight: 800; color: var(--primary); line-height: 1; margin-bottom: 0.5rem; }
+        @media (max-width: 768px) { .container { padding: 10px; } h1 { font-size: 2rem; } .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-shield-alt"></i> IAM Portfolio</h1>
+            <div style="display: inline-flex; align-items: center; gap: 10px; background: var(--success); color: white; padding: 0.5rem 1.5rem; border-radius: 25px; font-weight: 600; margin: 1rem 0;">
+                <i class="fas fa-check-circle"></i> Live & Fully Functional
+            </div>
+            <p style="color: #64748b; font-size: 1.2rem; margin-bottom: 1.5rem;">
+                Senior Identity & Access Management Specialist | 5+ Years Enterprise Experience
+            </p>
+            <div style="margin-top: 1.5rem;">
+                <a href="#stats" style="display: inline-flex; align-items: center; gap: 8px; background: var(--primary); color: white; padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; margin: 0.5rem; font-weight: 600;">View Statistics</a>
+                <a href="https://github.com/papylokondo36-pixel" style="display: inline-flex; align-items: center; gap: 8px; background: transparent; border: 2px solid var(--primary); color: var(--primary); padding: 0.7rem 1.5rem; border-radius: 8px; text-decoration: none; margin: 0.5rem; font-weight: 600;">GitHub Profile</a>
+            </div>
+        </div>
+
+        <div id="stats">
+            <h2 style="margin: 2rem 0 1rem 0; color: var(--dark);"><i class="fas fa-tachometer-alt"></i> IAM Performance Metrics</h2>
+            <div class="stats-grid">
+                <div class="stat-item"><div class="stat-number">15+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">IAM Projects</div></div>
+                <div class="stat-item"><div class="stat-number">5+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Years Experience</div></div>
+                <div class="stat-item"><div class="stat-number">20+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Technologies</div></div>
+                <div class="stat-item"><div class="stat-number">8+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Certifications</div></div>
+                <div class="stat-item"><div class="stat-number">50+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Implementations</div></div>
+                <div class="stat-item"><div class="stat-number">25+</div><div style="color: #64748b; font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">Enterprise Clients</div></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('✅ IAM Portfolio restored successfully');
+            document.getElementById('currentDate').textContent = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        });
+    </script>
+</body>
+</html>
