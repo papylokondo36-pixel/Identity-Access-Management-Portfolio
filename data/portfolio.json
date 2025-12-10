@@ -1,0 +1,211 @@
+{
+  "experience": [
+    {
+      "achievements": [
+        "Led 15+ IAM implementations for Fortune 500 clients",
+        "Designed Zero Trust architectures reducing security incidents by 40%",
+        "Developed custom IAM automation scripts saving 300+ hours annually"
+      ],
+      "company": "Global Cybersecurity Firm",
+      "period": "2021-Present",
+      "role": "Senior IAM Consultant"
+    },
+    {
+      "achievements": [
+        "Managed SailPoint IdentityIQ for 50,000+ identities",
+        "Implemented automated provisioning saving  annually",
+        "Reduced access request fulfillment time from 5 days to 2 hours"
+      ],
+      "company": "Financial Services Corporation",
+      "period": "2019-2021",
+      "role": "IAM Security Engineer"
+    }
+  ],
+  "stats": {
+    "experience": 5,
+    "clients": 25,
+    "implementations": 50,
+    "certifications": 8,
+    "projects": 12,
+    "technologies": 15
+  },
+  "skills": [
+    {
+      "name": "SailPoint IdentityIQ",
+      "category": "Identity Governance",
+      "level": "Expert",
+      "icon": "fa-shield-alt"
+    },
+    {
+      "name": "Okta Workforce Identity",
+      "category": "SSO & MFA",
+      "level": "Expert",
+      "icon": "fa-user-lock"
+    },
+    {
+      "name": "Azure Active Directory",
+      "category": "Cloud IAM",
+      "level": "Expert",
+      "icon": "fa-cloud"
+    },
+    {
+      "name": "AWS IAM",
+      "category": "Cloud Security",
+      "level": "Advanced",
+      "icon": "fa-server"
+    },
+    {
+      "name": "OAuth 2.0 / OIDC",
+      "category": "API Security",
+      "level": "Expert",
+      "icon": "fa-key"
+    },
+    {
+      "name": "SAML 2.0",
+      "category": "Federation",
+      "level": "Expert",
+      "icon": "fa-exchange-alt"
+    },
+    {
+      "name": "RBAC / ABAC",
+      "category": "Access Control",
+      "level": "Expert",
+      "icon": "fa-user-check"
+    },
+    {
+      "name": "Multi-Factor Authentication",
+      "category": "Authentication",
+      "level": "Expert",
+      "icon": "fa-mobile-alt"
+    },
+    {
+      "name": "Privileged Access Management",
+      "category": "Security",
+      "level": "Advanced",
+      "icon": "fa-user-secret"
+    },
+    {
+      "name": "Zero Trust Architecture",
+      "category": "Security Model",
+      "level": "Expert",
+      "icon": "fa-shield-check"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Enterprise SSO Migration for Financial Institution",
+      "outcome": "Reduced authentication-related help desk tickets by 85% and improved login speed by 70%",
+      "id": 1,
+      "client": "Fortune 500 Bank",
+      "technologies": [
+        "Okta",
+        "SAML 2.0",
+        "Azure AD",
+        "SCIM",
+        "Passwordless Auth"
+      ],
+      "role": "Lead IAM Architect",
+      "duration": "6 months",
+      "challenges": [
+        "Legacy system integration",
+        "User training",
+        "Compliance requirements"
+      ],
+      "description": "Led migration of 15,000+ users from legacy authentication to modern SSO with adaptive MFA"
+    },
+    {
+      "title": "Cloud IAM Governance Framework",
+      "outcome": "Reduced excessive permissions by 60% and automated permission reviews saving 200+ hours monthly",
+      "id": 2,
+      "client": "Global Technology Company",
+      "technologies": [
+        "AWS IAM",
+        "Azure RBAC",
+        "GCP IAM",
+        "Terraform",
+        "Python"
+      ],
+      "role": "Cloud IAM Specialist",
+      "duration": "9 months",
+      "challenges": [
+        "Multi-cloud complexity",
+        "Permission sprawl",
+        "Audit compliance"
+      ],
+      "description": "Designed and implemented centralized IAM governance across AWS, Azure, and GCP environments"
+    },
+    {
+      "title": "Zero Trust Security Implementation",
+      "outcome": "Reduced attack surface by 75% and achieved 100% HIPAA compliance for remote access",
+      "id": 3,
+      "client": "Healthcare Organization",
+      "technologies": [
+        "Zscaler",
+        "BeyondCorp",
+        "SIEM",
+        "NGFW",
+        "Identity-Aware Proxy"
+      ],
+      "role": "Zero Trust Security Architect",
+      "duration": "8 months",
+      "challenges": [
+        "HIPAA compliance",
+        "Legacy application support",
+        "User experience"
+      ],
+      "description": "Implemented Zero Trust security model with continuous verification and microsegmentation"
+    }
+  ],
+  "personal": {
+    "title": "Senior Identity & Access Management Expert",
+    "location": "Cybersecurity Professional",
+    "name": "IAM Security Specialist",
+    "email": "security@example.com",
+    "github": "https://github.com/papylokondo36-pixel",
+    "linkedin": "https://linkedin.com/in/yourprofile"
+  },
+  "certifications": [
+    {
+      "issuer": "ISC2",
+      "name": "CISSP",
+      "year": "2023",
+      "fullname": "Certified Information Systems Security Professional"
+    },
+    {
+      "issuer": "ISACA",
+      "name": "CISM",
+      "year": "2022",
+      "fullname": "Certified Information Security Manager"
+    },
+    {
+      "issuer": "Amazon Web Services",
+      "name": "AWS Security Specialty",
+      "year": "2023",
+      "fullname": "AWS Certified Security - Specialty"
+    },
+    {
+      "issuer": "Okta",
+      "name": "Okta Certified",
+      "year": "2022",
+      "fullname": "Okta Certified Professional"
+    },
+    {
+      "issuer": "SailPoint",
+      "name": "SailPoint Certified",
+      "year": "2021",
+      "fullname": "SailPoint IdentityIQ Engineer"
+    },
+    {
+      "issuer": "Microsoft",
+      "name": "Microsoft SC-900",
+      "year": "2022",
+      "fullname": "Security, Compliance, and Identity Fundamentals"
+    },
+    {
+      "issuer": "CompTIA",
+      "name": "CompTIA Security+",
+      "year": "2021",
+      "fullname": "Security+"
+    }
+  ]
+}

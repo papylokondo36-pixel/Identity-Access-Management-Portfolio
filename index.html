@@ -3,171 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Identity & Access Management Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title id="page-title">IAM Portfolio | Data-Driven Cybersecurity Showcase</title>
+    <meta name="description" content="Dynamic IAM portfolio showcasing Identity Management expertise with real-time data and interactive projects">
+    
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/portfolio-data-styles.css">
+    <style>
+        :root {
+            --primary: #1e40af;
+            --secondary: #3b82f6;
+            --accent: #8b5cf6;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --danger: #ef4444;
+            --dark: #1e293b;
+            --light: #f8fafc;
+            --gray: #64748b;
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: var(--dark);
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        /* Header */
+        .hero {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 20px;
+            margin-bottom: 2rem;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            border-top: 6px solid var(--primary);
+        }
+        
+        .hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: var(--gray);
+            max-width: 800px;
+            margin: 0 auto 2rem auto;
+        }
+        
+        .status-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: linear-gradient(135deg, var(--success), #34d399);
+            color: white;
+            padding: 0.6rem 1.8rem;
+            border-radius: 25px;
+            font-weight: 700;
+            margin: 1rem 0;
+            box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+        }
+        
+        /* Section Styling */
+        .section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 18px;
+            margin: 2.5rem 0;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        
+        .section-header h2 {
+            font-size: 1.8rem;
+            color: var(--dark);
+        }
+        
+        .section-header i {
+            font-size: 1.8rem;
+            color: var(--primary);
+        }
+        
+        /* Buttons */
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+        
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: var(--primary);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+        
+        .btn-outline:hover {
+            background: var(--primary);
+            color: white;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            padding: 2.5rem;
+            color: var(--gray);
+            border-top: 1px solid #e2e8f0;
+            background: white;
+            border-radius: 15px;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1.5rem 0;
+        }
+        
+        .footer-links a {
+            color: var(--primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
+        }
+        
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 1rem auto;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container { padding: 15px; }
+            .hero h1 { font-size: 2.3rem; }
+            .hero-subtitle { font-size: 1.1rem; }
+            .section { padding: 1.5rem; }
+            .btn-group { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+        }
+    </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <i class="fas fa-shield-alt"></i>
-                <span>IAM Portfolio</span>
+    <div class="container">
+        <!-- Hero Section -->
+        <div class="hero fade-in-up">
+            <h1><i class="fas fa-shield-alt"></i> IAM Portfolio</h1>
+            <div class="status-badge">
+                <i class="fas fa-bolt"></i> Data-Driven Cybersecurity Showcase
             </div>
-            <ul class="nav-menu">
-                <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
-                <li><a href="#concepts"><i class="fas fa-brain"></i> Concepts</a></li>
-                <li><a href="#technologies"><i class="fas fa-code"></i> Technologies</a></li>
-                <li><a href="#implementations"><i class="fas fa-cogs"></i> Implementations</a></li>
-                <li><a href="#best-practices"><i class="fas fa-check-circle"></i> Best Practices</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <!-- Main Dashboard -->
-    <main class="dashboard" id="dashboard">
-        <header class="dashboard-header">
-            <h1><i class="fas fa-user-shield"></i> Identity & Access Management Portfolio</h1>
-            <p class="subtitle">Showcasing IAM principles, technologies, and security implementations</p>
-        </header>
-
-        <!-- Stats Cards -->
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-icon" style="background-color: #4CAF50;">
-                    <i class="fas fa-users"></i>
-                </div>
-                <div class="stat-content">
-                    <h3>Authentication</h3>
-                    <p class="stat-value">Multi-Factor</p>
-                    <p class="stat-desc">SSO, MFA, Biometrics</p>
-                </div>
-            </div>
+            <p class="hero-subtitle" id="personal-title">
+                Senior Identity & Access Management Expert | Cloud Security Specialist | Zero Trust Architect
+            </p>
+            <p class="hero-subtitle" id="personal-name">
+                IAM Security Professional
+            </p>
             
-            <div class="stat-card">
-                <div class="stat-icon" style="background-color: #2196F3;">
-                    <i class="fas fa-user-lock"></i>
-                </div>
-                <div class="stat-content">
-                    <h3>Authorization</h3>
-                    <p class="stat-value">Role-Based</p>
-                    <p class="stat-desc">RBAC, ABAC, Policies</p>
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-icon" style="background-color: #FF9800;">
-                    <i class="fas fa-sync-alt"></i>
-                </div>
-                <div class="stat-content">
-                    <h3>Provisioning</h3>
-                    <p class="stat-value">Automated</p>
-                    <p class="stat-desc">SCIM, JIT, Workflows</p>
-                </div>
-            </div>
-            
-            <div class="stat-card">
-                <div class="stat-icon" style="background-color: #9C27B0;">
-                    <i class="fas fa-chart-line"></i>
-                </div>
-                <div class="stat-content">
-                    <h3>Governance</h3>
-                    <p class="stat-value">Compliance</p>
-                    <p class="stat-desc">Audit, Reporting, Certifications</p>
-                </div>
+            <div class="btn-group">
+                <a href="#projects" class="btn">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="#skills" class="btn btn-outline">
+                    <i class="fas fa-star"></i> View Skills
+                </a>
+                <a href="https://github.com/papylokondo36-pixel/Identity-Access-Management-Portfolio" 
+                   class="btn" target="_blank">
+                    <i class="fab fa-github"></i> GitHub Repository
+                </a>
             </div>
         </div>
 
-        <!-- IAM Concepts Section -->
-        <section class="section" id="concepts">
-            <h2><i class="fas fa-brain"></i> Core IAM Concepts</h2>
-            <div class="concepts-grid">
-                <div class="concept-card" onclick="showConceptDetails('authentication')">
-                    <h3>Authentication</h3>
-                    <p>Verifying user identity</p>
-                    <div class="concept-tags">
-                        <span class="tag">MFA</span>
-                        <span class="tag">SSO</span>
-                        <span class="tag">Passwordless</span>
-                    </div>
-                </div>
-                
-                <div class="concept-card" onclick="showConceptDetails('authorization')">
-                    <h3>Authorization</h3>
-                    <p>Determining access permissions</p>
-                    <div class="concept-tags">
-                        <span class="tag">RBAC</span>
-                        <span class="tag">ABAC</span>
-                        <span class="tag">PBAC</span>
-                    </div>
-                </div>
-                
-                <div class="concept-card" onclick="showConceptDetails('directory')">
-                    <h3>Directory Services</h3>
-                    <p>User identity storage</p>
-                    <div class="concept-tags">
-                        <span class="tag">LDAP</span>
-                        <span class="tag">Active Directory</span>
-                        <span class="tag">Azure AD</span>
-                    </div>
-                </div>
+        <!-- Stats Dashboard -->
+        <div class="section fade-in-up">
+            <div class="section-header">
+                <i class="fas fa-chart-line"></i>
+                <h2>IAM Performance Metrics</h2>
             </div>
-        </section>
-
-        <!-- Technology Stack -->
-        <section class="section" id="technologies">
-            <h2><i class="fas fa-code"></i> IAM Technology Stack</h2>
-            <div class="tech-grid">
-                <div class="tech-card">
-                    <i class="fab fa-microsoft fa-2x"></i>
-                    <h3>Azure AD</h3>
-                    <p>Microsoft's cloud identity service</p>
-                </div>
-                
-                <div class="tech-card">
-                    <i class="fas fa-cloud fa-2x"></i>
-                    <h3>AWS IAM</h3>
-                    <p>Amazon Web Services Identity</p>
-                </div>
-                
-                <div class="tech-card">
-                    <i class="fab fa-google fa-2x"></i>
-                    <h3>Google Cloud IAM</h3>
-                    <p>Google's identity platform</p>
-                </div>
-                
-                <div class="tech-card">
-                    <i class="fas fa-key fa-2x"></i>
-                    <h3>Okta</h3>
-                    <p>Independent identity provider</p>
-                </div>
+            <div id="stats-container" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading portfolio statistics...</p>
             </div>
-        </section>
+        </div>
 
-        <!-- API Demo Section -->
-        <section class="section" id="api-demo">
-            <h2><i class="fas fa-plug"></i> API Integration Demo</h2>
-            <div class="api-demo">
-                <button class="btn-primary" onclick="fetchIAMData()">
-                    <i class="fas fa-download"></i> Load IAM Data
-                </button>
-                <div id="api-results" class="api-results">
-                    <!-- API results will appear here -->
-                </div>
+        <!-- Skills Section -->
+        <div class="section fade-in-up" id="skills">
+            <div class="section-header">
+                <i class="fas fa-cogs"></i>
+                <h2>Technical Expertise</h2>
             </div>
-        </section>
-    </main>
+            <div id="skills-container" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading technical skills...</p>
+            </div>
+        </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>Identity & Access Management Portfolio Project</p>
-        <p>Learning Journey: Day 1-6 Implementation</p>
+        <!-- Projects Section -->
+        <div class="section fade-in-up" id="projects">
+            <div class="section-header">
+                <i class="fas fa-project-diagram"></i>
+                <h2>IAM Implementation Projects</h2>
+            </div>
+            <div id="projects-container" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading project portfolio...</p>
+            </div>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section fade-in-up">
+            <div class="section-header">
+                <i class="fas fa-certificate"></i>
+                <h2>Professional Certifications</h2>
+            </div>
+            <div id="certifications-container" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading certifications...</p>
+            </div>
+        </div>
+
+        <!-- Experience Section -->
+        <div class="section fade-in-up">
+            <div class="section-header">
+                <i class="fas fa-briefcase"></i>
+                <h2>Professional Experience</h2>
+            </div>
+            <div id="experience-container" class="loading">
+                <div class="loading-spinner"></div>
+                <p>Loading experience timeline...</p>
+                <!-- Experience will be loaded dynamically -->
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="section fade-in-up" style="text-align: center;">
+            <div class="section-header" style="justify-content: center;">
+                <i class="fas fa-paper-plane"></i>
+                <h2>Get In Touch</h2>
+            </div>
+            <p style="margin-bottom: 2rem; color: var(--gray);">
+                Interested in IAM solutions, cybersecurity collaboration, or technical consulting?
+            </p>
+            <div class="btn-group">
+                <a href="mailto:contact@example.com" class="btn">
+                    <i class="fas fa-envelope"></i> Send Email
+                </a>
+                <a href="https://linkedin.com/in/" class="btn btn-outline" target="_blank">
+                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </div>
+
+        <!-- Portfolio Info -->
+        <div style="margin: 2rem 0; padding: 1.5rem; background: #f8fafc; border-radius: 12px; text-align: center;">
+            <h3><i class="fas fa-info-circle"></i> Portfolio Information</h3>
+            <p style="margin-top: 0.5rem; color: var(--gray);">
+                This portfolio dynamically loads data from JSON files and showcases IAM expertise.<br>
+                <strong>Last Updated:</strong> <span id="current-date">December 10, 2025</span> | 
+                <strong>Deployment:</strong> GitHub Pages | 
+                <strong>Repository:</strong> papylokondo36-pixel/Identity-Access-Management-Portfolio
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© <span id="current-year">2025</span> Identity & Access Management Portfolio</p>
+        <p style="margin: 0.5rem 0; color: var(--gray); font-size: 0.9rem;">
+            Built with GitHub Pages | Data-Driven Design | Security Focused
+        </p>
+        <div class="footer-links">
+            <a href="https://github.com/papylokondo36-pixel" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="#top">
+                <i class="fas fa-arrow-up"></i> Back to Top
+            </a>
+            <a href="data/portfolio.json" target="_blank">
+                <i class="fas fa-database"></i> View Data
+            </a>
+        </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="js/portfolio-data-loader.js"></script>
+    <script>
+        // Update current date and year
+        document.getElementById('current-date').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Add scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in-up');
+                }
+            });
+        }, observerOptions);
+        
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+        
+        // Console message for developers
+        console.log('%c🔐 IAM Portfolio Data Loader Initialized', 
+            'color: #1e40af; font-size: 16px; font-weight: bold;');
+        console.log('Data source: data/portfolio.json');
+        console.log('Live at: https://papylokondo36-pixel.github.io/Identity-Access-Management-Portfolio/');
+    </script>
 </body>
 </html>
-
-<!-- Last deployment: 2025-12-10 03:20:24 -->
