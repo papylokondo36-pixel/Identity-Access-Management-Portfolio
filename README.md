@@ -61,3 +61,28 @@ This is a static site - no build process required. All files are ready to deploy
 
 ---
 *Deployed via GitHub Pages on 2025-12-10*
+
+
+## 🚀 Live Demo
+
+Your Identity & Access Management Portfolio is now live on GitHub Pages!
+
+**🔗 Live Site:** https://papylokondo36-pixel.github.io/Identity-Access-Management-Portfolio/
+
+### 📊 Deployment Status
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-Deployed-success?style=for-the-badge)
+![Last Deployed](https://img.shields.io/badge/Last_Deployed-2025--12--10-blue?style=for-the-badge)
+
+### 🌐 Repository
+- **GitHub Repo:** https://github.com/papylokondo36-pixel/Identity-Access-Management-Portfolio
+- **Pages Settings:** https://github.com/papylokondo36-pixel/Identity-Access-Management-Portfolio/settings/pages
+
+### 🎯 Features Live
+- ✅ Interactive IAM Dashboard
+- ✅ Responsive Design
+- ✅ API Integration Demo
+- ✅ Authentication Simulation
+- ✅ Mobile-Optimized Layout
+
+---
+*Successfully deployed to GitHub Pages on 2025-12-10 01:51*
