@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+<meta name="description" content="Interactive Identity & Access Management portfolio showcasing IAM concepts, technologies, and security implementations">
+<meta name="keywords" content="IAM, Identity Access Management, Security, Authentication, Authorization, Portfolio">
+<meta name="author" content="Your Name">
+<meta property="og:title" content="Identity & Access Management Portfolio">
+<meta property="og:description" content="Showcasing IAM principles, technologies, and security implementations">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="IAM Portfolio">
+<meta name="twitter:description" content="Interactive IAM concepts showcase">
+    <title>Identity & Access Management Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-shield-alt"></i>
+                <span>IAM Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
+                <li><a href="#concepts"><i class="fas fa-brain"></i> Concepts</a></li>
+                <li><a href="#technologies"><i class="fas fa-code"></i> Technologies</a></li>
+                <li><a href="#implementations"><i class="fas fa-cogs"></i> Implementations</a></li>
+                <li><a href="#best-practices"><i class="fas fa-check-circle"></i> Best Practices</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <main class="dashboard" id="dashboard">
+        <header class="dashboard-header">
+            <h1><i class="fas fa-user-shield"></i> Identity & Access Management Portfolio</h1>
+            <p class="subtitle">Showcasing IAM principles, technologies, and security implementations</p>
+        </header>
+
+        <!-- Stats Cards -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #4CAF50;">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Authentication</h3>
+                    <p class="stat-value">Multi-Factor</p>
+                    <p class="stat-desc">SSO, MFA, Biometrics</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #2196F3;">
+                    <i class="fas fa-user-lock"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Authorization</h3>
+                    <p class="stat-value">Role-Based</p>
+                    <p class="stat-desc">RBAC, ABAC, Policies</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #FF9800;">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Provisioning</h3>
+                    <p class="stat-value">Automated</p>
+                    <p class="stat-desc">SCIM, JIT, Workflows</p>
+                </div>
+            </div>
+            
+            <div class="stat-card">
+                <div class="stat-icon" style="background-color: #9C27B0;">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="stat-content">
+                    <h3>Governance</h3>
+                    <p class="stat-value">Compliance</p>
+                    <p class="stat-desc">Audit, Reporting, Certifications</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- IAM Concepts Section -->
+        <section class="section" id="concepts">
+            <h2><i class="fas fa-brain"></i> Core IAM Concepts</h2>
+            <div class="concepts-grid">
+                <div class="concept-card" onclick="showConceptDetails('authentication')">
+                    <h3>Authentication</h3>
+                    <p>Verifying user identity</p>
+                    <div class="concept-tags">
+                        <span class="tag">MFA</span>
+                        <span class="tag">SSO</span>
+                        <span class="tag">Passwordless</span>
+                    </div>
+                </div>
+                
+                <div class="concept-card" onclick="showConceptDetails('authorization')">
+                    <h3>Authorization</h3>
+                    <p>Determining access permissions</p>
+                    <div class="concept-tags">
+                        <span class="tag">RBAC</span>
+                        <span class="tag">ABAC</span>
+                        <span class="tag">PBAC</span>
+                    </div>
+                </div>
+                
+                <div class="concept-card" onclick="showConceptDetails('directory')">
+                    <h3>Directory Services</h3>
+                    <p>User identity storage</p>
+                    <div class="concept-tags">
+                        <span class="tag">LDAP</span>
+                        <span class="tag">Active Directory</span>
+                        <span class="tag">Azure AD</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Stack -->
+        <section class="section" id="technologies">
+            <h2><i class="fas fa-code"></i> IAM Technology Stack</h2>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="fab fa-microsoft fa-2x"></i>
+                    <h3>Azure AD</h3>
+                    <p>Microsoft's cloud identity service</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-cloud fa-2x"></i>
+                    <h3>AWS IAM</h3>
+                    <p>Amazon Web Services Identity</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fab fa-google fa-2x"></i>
+                    <h3>Google Cloud IAM</h3>
+                    <p>Google's identity platform</p>
+                </div>
+                
+                <div class="tech-card">
+                    <i class="fas fa-key fa-2x"></i>
+                    <h3>Okta</h3>
+                    <p>Independent identity provider</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- API Demo Section -->
+        <section class="section" id="api-demo">
+            <h2><i class="fas fa-plug"></i> API Integration Demo</h2>
+            <div class="api-demo">
+                <button class="btn-primary" onclick="fetchIAMData()">
+                    <i class="fas fa-download"></i> Load IAM Data
+                </button>
+                <div id="api-results" class="api-results">
+                    <!-- API results will appear here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Identity & Access Management Portfolio Project</p>
+        <p>Learning Journey: Day 1-6 Implementation</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

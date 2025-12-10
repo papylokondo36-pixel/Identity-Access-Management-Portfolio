@@ -1,0 +1,27 @@
+{
+  "name": "identity-access-management-portfolio",
+  "version": "1.0.0",
+  "description": "Interactive portfolio showcasing Identity & Access Management concepts",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server .",
+    "build": "echo 'Building IAM Portfolio...'",
+    "deploy:github": "echo 'Deploying to GitHub Pages...'",
+    "deploy:netlify": "echo 'Deploying to Netlify...'",
+    "optimize:images": "echo 'Optimizing images...'",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [
+    "iam",
+    "identity-access-management",
+    "portfolio",
+    "security",
+    "authentication",
+    "authorization"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

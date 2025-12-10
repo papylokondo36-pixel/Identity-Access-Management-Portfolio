@@ -1,0 +1,22 @@
+# GitHub Pages Configuration
+# This site will be published at: https://[username].github.io/Identity-Access-Management-Portfolio/
+
+# Build settings
+build:
+  command: npm run build
+  output: dist
+
+# Environment variables
+env:
+  NODE_ENV: production
+
+# Custom domain (optional)
+# CNAME: your-domain.com
+
+# Security headers
+headers:
+  - path: /*
+    values:
+      X-Frame-Options: DENY
+      X-Content-Type-Options: nosniff
+      Referrer-Policy: strict-origin-when-cross-origin

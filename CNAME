@@ -1,0 +1,6 @@
+# To use a custom domain:
+# 1. Remove the '#' from the next line
+# 2. Replace 'your-domain.com' with your actual domain
+# 3. Configure DNS settings with your domain provider
+#
+# your-domain.com
