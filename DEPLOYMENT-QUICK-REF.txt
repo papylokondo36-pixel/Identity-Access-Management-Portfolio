@@ -1,0 +1,24 @@
+# DEPLOYMENT QUICK REFERENCE
+# Username: papylokondo36-pixel
+
+## COMMANDS TO RUN:
+git add .
+git commit -m "Deploy IAM Portfolio"
+git push https://github.com/papylokondo36-pixel/Identity-Access-Management-Portfolio.git main
+
+## OR USE THE SCRIPT:
+.\deploy-now.ps1
+
+## AFTER PUSHING, ENABLE PAGES:
+1. Go to: https://github.com/papylokondo36-pixel/Identity-Access-Management-Portfolio/settings/pages
+2. Select: Branch: main, Folder: / (root)
+3. Click Save
+
+## YOUR LIVE SITE:
+https://papylokondo36-pixel.github.io/Identity-Access-Management-Portfolio/
+
+## TEST YOUR SITE:
+• Check navigation works
+• Test API demo button
+• Verify responsive design
+• Look for console errors (F12)
